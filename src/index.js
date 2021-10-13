@@ -128,8 +128,8 @@
  */
 // 配列の展開
 // const arr1 = [1, 2];
-// // console.log(arr1);
-// // console.log(...arr1);
+// console.log(arr1);
+// console.log(...arr1);
 
 // const sumFunc = (num1, num2) => console.log(num1 + num2);
 // sumFunc(arr1[0], arr1[1]);
@@ -137,7 +137,7 @@
 
 // まとめる
 // const arr2 = [1, 2, 3, 4, 5];
-// //分割代入
+//分割代入
 // const [num1, num2, ...arr3] = arr2;
 // console.log(num1);
 // console.log(num2);
@@ -162,7 +162,8 @@
 /**
  * mapやfilterを使った処理
  */
-// const nameArr = ["田中", "山田", "じゃけぇ"];
+const nameArr = ["田中", "山田", "じゃけぇ"];
+
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目は、${nameArr[index]}です。`);
 // }
@@ -205,7 +206,30 @@
 // const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
 // console.log(formattedNum);
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています！" : "許容範囲内です";
-};
-console.log(checkSum(50, 40));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています！" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 40));
+
+/**
+ * 論理演算子の本当の意味を知ろう　 && //
+ */
+// const flag1 = true;
+// const flag2 = false;
+
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueです。");
+// }
+
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueです。");
+// }
+// ||(パイプライン)は左側がfalseならば右側を返す 左側がtrueならば左側を返す
+// const num = 100;
+// const fee = num || "金額未設定です";
+// console.log(fee);
+
+// &&は左側がtrueならば右側を返す　左側がfalseならば左側を返す
+// const num2 = 100;
+// const fee2 = num2 && "なんか設定されました";
+// console.log(fee2);
